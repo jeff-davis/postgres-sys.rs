@@ -85,9 +85,14 @@ fn include_filter(path: &PathBuf) -> bool {
         PathBuf::from("jsonfuncs.h"), // v13
         PathBuf::from("cmdtaglist.h"), // v13
         PathBuf::from("pg_cast_d.h"), // v10
+        PathBuf::from("plperl.h"), // v10
+        PathBuf::from("plpython.h"), // v10
+        PathBuf::from("plpy_util.h"), // v10
+        PathBuf::from("ppport.h"), // v10
         // directories that can't be processed
         PathBuf::from("libstemmer"), // all
         PathBuf::from("fe_utils"), // all
+        PathBuf::from("libpq"), // v10
         PathBuf::from("regex"), // all
         PathBuf::from("jit"), // v13
         PathBuf::from("common"), // all
